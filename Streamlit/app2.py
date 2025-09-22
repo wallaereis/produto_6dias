@@ -3,7 +3,11 @@ import streamlit as st
 import numpy as np
 
 
-st.set_page_config(layout="wide")
+st.set_page_config(
+    page_title="Controle",
+    page_icon="🛒", # Use um emoji ou caminho de arquivo de imagem
+    layout="wide"
+)
 
 df = pd.read_excel(r"Streamlit/Produto Abaixo de 6 dias.xlsx")
 
@@ -103,6 +107,7 @@ elif pagina == "Ajuste de Parâmetro":
             file_name="Ajuste_de_Parametro.csv",
             mime="text/csv"
         )
+
 
 
 

@@ -6,7 +6,7 @@ import numpy as np
 st.set_page_config(layout="wide")
 
 
-df = pd.read_excel("data/Produto Abaixo de 6 dias.xlsx")
+df = pd.read_excel("Produto Abaixo de 6 dias.xlsx")
 
 df["DATA"] = df["DATA"].dt.strftime("%d/%m/%Y")
 
@@ -104,6 +104,7 @@ elif pagina == "Ajuste de Parâmetro":
             file_name="Ajuste_de_Parametro.csv",
             mime="text/csv"
         )
+
 
 
 
